@@ -2,6 +2,51 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-family: "PT Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+body .pattern-top {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+}
+body .pattern-bottom {
+  position: absolute;
+  bottom: -80%;
+  right: -15%;
+}
+
+.card-container {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.bg-top img {
+  border-radius: 20px 20px 0 0;
+}
+
+.stats-section {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  transform: translateY(-50%);
+  border: 5px solid white;
 }
 
 .attribution {
