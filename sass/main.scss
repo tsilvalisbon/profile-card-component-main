@@ -34,24 +34,71 @@ body {
   background-color: white;
 }
 
+.age {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: -50px;
+  h1 {
+    font-weight: bold;
+    font-size: $name-stats;
+  }
+
+  h2 {
+    font-size: $name-stats;
+    color: $dark-gray;
+    margin-bottom: 5px;
+  }
+}
+
+.location {
+  font-size: 15px;
+  color: $dark-gray;
+  text-align: center;
+  margin-top: -20px;
+}
+
 .bg-top img {
   border-radius: 20px 20px 0 0;
 }
 
 .stats-section {
   display: flex;
-  column-gap: 10px;
+  column-gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 2px solid $grayish-blue;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.avatar img {
-  border-radius: 50%;
+.stats {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  h2 {
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+
+.avatar {
   transform: translateY(-50%);
-  border: 5px solid white;
+  img {
+    border-radius: 50%;
+    border: 5px solid white;
+  }
 }
 
 .attribution {
   font-size: 15px;
   text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 39%;
   a {
     color: hsl(228, 45%, 44%);
   }
